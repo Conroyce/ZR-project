@@ -8,13 +8,14 @@ body{
   margin:0;
   padding:0;
   line-height: 1.5em;
+  font-family: 'Helvetica Neue', 'sans serif';
 }
 
 li {
   list-style:none;
 } 
 
-b{
+b {
   font-size: 110%;
 }
 
@@ -34,7 +35,7 @@ b{
 }
 
 #contentcolumn{
-  margin: 0 200px 0 250px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+  margin: 0 70px 0 250px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
 }
 
 #leftcolumn{
@@ -57,6 +58,19 @@ b{
 .innertube{
   margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
   margin-top: 0;
+}
+
+.dashboard {
+  box-sizing:border-box;
+  margin:20px;
+}
+
+.dash-container {
+  margin-left:10px;
+}
+
+.row {
+  margin-bottom:10px;
 }
 
 .sideTitle {
@@ -100,6 +114,56 @@ b{
 
 .option-text {
   margin-left:10px;
+}
+
+.badge {
+  border-radius: 3px;
+}
+
+.sidebar-badge {
+  float:right;
+  margin-top: 5px;
+  background-color:#FF6600;
+}
+
+.badge-dash {
+  background-color: #fff;
+  color: #666;
+  font-weight:300;
+  border:1px solid #ccc;
+}
+
+.badge-active {
+  color: #FF6600;
+}
+
+.btn-dash {
+  background-color:#49A1E0;
+  color:white;
+}
+
+.active {
+  color:#FF6600;
+  border-bottom:2px solid #FF6600;
+}
+
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+.nav-tabs a {
+  color:#333;
+  font-weight:500;
+}
+
+.nav-tabs>li.active>a {
+  border:0;
+  color:#FF6600;
+}
+
+.nav-tabs>li.active>a:hover {
+  border:0;
+  color:#FF6600;
 }
 
 /* ####### responsive layout CSS ####### */
