@@ -1,3 +1,5 @@
+/*  GENERAL */
+
 @-webkit-viewport   { width: device-width; }
 @-moz-viewport      { width: device-width; }
 @-ms-viewport       { width: device-width; }
@@ -19,6 +21,8 @@ b {
   font-size: 110%;
 }
 
+/* LAYOUT */
+
 #topsection{
   background: #EAEAEA;
   height: 90px; /*Height of top section*/
@@ -38,13 +42,9 @@ b {
   margin: 0 70px 0 250px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
 }
 
-#leftcolumn{
-  float: left;
-  width: 250px; /*Width of left column*/
-  margin-left: -100%;
-  background: #eee;
-  height:100%;
-  border-right: 2px solid #ccc;
+.innertube{
+  margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+  margin-top: 0;
 }
 
 #rightcolumn{
@@ -55,34 +55,16 @@ b {
   height:100%;
 }
 
-.innertube{
-  margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
-  margin-top: 0;
-}
 
-.dashboard {
-  box-sizing:border-box;
-  margin:20px;
-}
+/* LEFT COLUMN */
 
-.dash-container {
-  margin-left:10px;
-}
-
-.row {
-  margin-bottom:10px;
-}
-
-.sideTitle {
-  background-color: #ccc;
-  height:70px;
-  padding:25px;
-}
-
-.sideTitle h3{
-  margin:0;
-  text-align:center;
-  color:#888;
+#leftcolumn{
+  float: left;
+  width: 250px; /*Width of left column*/
+  margin-left: -100%;
+  background: #eee;
+  height:100%;
+  border-right: 2px solid #ccc;
 }
 
 .user-container {
@@ -96,6 +78,18 @@ b {
   color: #555;
   font-weight:500;
   font-size:1.1em;
+}
+
+.sideTitle {
+  background-color: #ccc;
+  height:70px;
+  padding:25px;
+}
+
+.sideTitle h3{
+  margin:0;
+  text-align:center;
+  color:#888;
 }
 
 .option-container {
@@ -116,14 +110,31 @@ b {
   margin-left:10px;
 }
 
-.badge {
-  border-radius: 3px;
-}
-
 .sidebar-badge {
   float:right;
   margin-top: 5px;
   background-color:#FF6600;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+  box-sizing:border-box;
+  margin:25px;
+}
+
+.dashboard h2 {
+  font-size:1.8em;
+}
+
+.dashboard h3 {
+  font-size:1.5em;
+  color:#666;
+}
+
+.dash-container {
+  margin-left:10px;
 }
 
 .badge-dash {
@@ -131,15 +142,43 @@ b {
   color: #666;
   font-weight:300;
   border:1px solid #ccc;
+  margin-left:5px;
+}
+
+.tasks {
+  margin-top:25px;
+}
+
+
+/* BOOTSTRAP CHANGES */
+
+.row {
+  margin-bottom:10px;
+}
+
+.badge {
+  border-radius: 3px;
 }
 
 .badge-active {
   color: #FF6600;
 }
 
+.btn-group button {
+  margin-right:2px;
+}
+
 .btn-dash {
   background-color:#49A1E0;
   color:white;
+}
+
+.dropdown-toggle {
+  height:34px;
+}
+
+.btn:hover {
+  color:#fff;
 }
 
 .active {
@@ -148,23 +187,50 @@ b {
 }
 
 .nav-tabs {
-  margin-bottom: 20px;
+  margin: 30px 0;
+  height:34px;
 }
 
-.nav-tabs a {
+.nav-tabs>li>a {
   color:#333;
   font-weight:500;
+  padding:5px;
+  padding-bottom:0px;
+}
+
+.nav-tabs a:hover {
+  background-color:#fff;
+}
+
+.nav-tabs>li {
+  margin-right:20px;
+}
+
+.nav-tabs>li>a:hover {
+  background-color:#fff;
+  border:0;
+  padding-bottom:0;
+  margin-bottom: 0;
+}
+
+.nav-tabs>li>a:focus {
+  background-color:#fff;
+  border:none;
 }
 
 .nav-tabs>li.active>a {
   border:0;
   color:#FF6600;
+  padding-bottom: 5px;
 }
 
 .nav-tabs>li.active>a:hover {
   border:0;
   color:#FF6600;
+  background-color:#fff;
 }
+
+
 
 /* ####### responsive layout CSS ####### */
 
