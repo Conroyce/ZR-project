@@ -247,12 +247,15 @@
       $(oldTarget).removeClass('active');
       $(oldBadge).removeClass('badge-active');
       
-      var tag = $(oldBadge).data()
-      console.log(Object.keys(tag));
+      var oldTag = $(oldBadge).data().tag;
+      var newTag = $(currentChild).data().tag;
+
+      $('.'+oldTag).hide();
+      $('.'+newTag).show();
 
       $(current).addClass('active');
       $(currentChild).addClass('badge-active');
-    })  
+    }) ; 
   </script>
 </body>  
 </html>
