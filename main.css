@@ -83,6 +83,7 @@ li {
 }
 
 .sideTitle h3{
+  font-family: "Times New Roman", Times, serif;
   margin:0;
   text-align:center;
   color:#888;
@@ -122,11 +123,13 @@ li {
 
 .dashboard h2 {
   font-size:1.8em;
+  margin-bottom:15px;
 }
 
 .dashboard h3 {
   font-size:1.5em;
   color:#666;
+  margin-bottom:15px;
 }
 
 .dash-container {
@@ -143,6 +146,7 @@ li {
 
 .tasks {
   margin-top:25px;
+  color: #337ab7;
 }
 
 .btn-column {
