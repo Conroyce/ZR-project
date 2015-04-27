@@ -1,16 +1,13 @@
 <html>
 <head>
   <title>Zip Realty</title>
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-  <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
   <link rel="stylesheet" type="text/css" href="main.css">
 
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -39,8 +36,8 @@
           <div class="dash-container home">
             <div class="row">
               <div class="col-xs-2">12/28/06</div>
-              <div class="col-xs-8">Request for Info from Michael Harris</div>
-              <div class="col-xs-2">
+              <div class="col-xs-5">Request for Info from <a href="#">Michael Harris</a></div>
+              <div class="col-xs-5 btn-column">
                 <div class="btn-group">
                   <button type="button" class="btn btn-dash">View Details</button>
                   <button type="button" class="btn btn-dash dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -57,8 +54,8 @@
 
             <div class="row">
               <div class="col-xs-2">12/28/06</div>
-              <div class="col-xs-8">Request for Info from Henry Helpdesk Test</div>
-              <div class="col-xs-2">
+              <div class="col-xs-5">Request for Info from <a href="#">Henry Helpdesk Test</a></div>
+              <div class="col-xs-5 btn-column">
                 <div class="btn-group">
                   <button type="button" class="btn btn-dash">View Details</button>
                   <button type="button" class="btn btn-dash dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -75,8 +72,8 @@
 
             <div class="row">
               <div class="col-xs-2">01/02/07</div>
-              <div class="col-xs-8">Request for Info from Frank Woolf</div>
-              <div class="col-xs-2">
+              <div class="col-xs-5">Request for Info from <a href="#">Frank Woolf</a></div>
+              <div class="col-xs-5 btn-column">
                 <div class="btn-group">
                   <button type="button" class="btn btn-dash">View Details</button>
                   <button type="button" class="btn btn-dash dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -96,9 +93,9 @@
 
           <div class="dash-container profile">
             <div class="row">
-              <div class="col-xs-2">12/28/06</div>
-              <div class="col-xs-8">Request for Info from Stevie Drew</div>
-              <div class="col-xs-2">
+              <div class="col-xs-2">11/20/04</div>
+              <div class="col-xs-5">Request for Info from <a href="#">Stevie Drew</a></div>
+              <div class="col-xs-5 btn-column">
                 <div class="btn-group">
                   <button type="button" class="btn btn-dash">View Details</button>
                   <button type="button" class="btn btn-dash dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -114,9 +111,9 @@
             </div>
 
             <div class="row">
-              <div class="col-xs-2">12/28/06</div>
-              <div class="col-xs-8">Request for Info from Elrick Stottelmeier</div>
-              <div class="col-xs-2">
+              <div class="col-xs-2">05/08/08</div>
+              <div class="col-xs-5">Request for Info from <a href="#">Elrick Stottelmeier</a></div>
+              <div class="col-xs-5 btn-column">
                 <div class="btn-group">
                   <button type="button" class="btn btn-dash">View Details</button>
                   <button type="button" class="btn btn-dash dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -132,9 +129,9 @@
             </div>
 
             <div class="row">
-              <div class="col-xs-2">01/02/07</div>
-              <div class="col-xs-8">Request for Info from Ally Briggs</div>
-              <div class="col-xs-2">
+              <div class="col-xs-2">06/22/08</div>
+              <div class="col-xs-5">Request for Info from <a href="#">Ally Briggs</a></div>
+              <div class="col-xs-5 btn-column">
                 <div class="btn-group">
                   <button type="button" class="btn btn-dash">View Details</button>
                   <button type="button" class="btn btn-dash dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -153,7 +150,7 @@
           </div>
 
           <div class="dash-container messages">
-            <h2>Hello From Messages</h2>
+            <p>No New Messages</p>
           </div>
 
         </div> <!-- End dashboard -->
@@ -232,30 +229,6 @@
     </div>
 
   </div> <!-- end maincontainer -->
-  <script>
-    $('.profile').hide();
-    $('.messages').hide();
-
-    $('.task-menu').on('click',function(e) {
-
-      var current = e.currentTarget.offsetParent;
-      var currentChild = e.currentTarget.children[0];
-
-      var oldTarget = $('.nav-tabs').find('.active')[0];
-      var oldBadge = $(oldTarget).children().children()[0];
-
-      $(oldTarget).removeClass('active');
-      $(oldBadge).removeClass('badge-active');
-      
-      var oldTag = $(oldBadge).data().tag;
-      var newTag = $(currentChild).data().tag;
-
-      $('.'+oldTag).hide();
-      $('.'+newTag).show();
-
-      $(current).addClass('active');
-      $(currentChild).addClass('badge-active');
-    }) ; 
-  </script>
+  <script src="main.js"></script>
 </body>  
 </html>

@@ -149,6 +149,9 @@ b {
   margin-top:25px;
 }
 
+.btn-column {
+  text-align:right;
+}
 
 /* BOOTSTRAP CHANGES */
 
@@ -210,7 +213,6 @@ b {
   background-color:#fff;
   border:0;
   padding-bottom:0;
-  margin-bottom: 0;
 }
 
 .nav-tabs>li>a:focus {
@@ -230,6 +232,11 @@ b {
   background-color:#fff;
 }
 
+.nav-tabs>li.active>a:focus {
+  border:0;
+  color:#FF6600;
+  background-color:#fff;
+}
 
 
 /* ####### responsive layout CSS ####### */
@@ -241,10 +248,7 @@ b {
   }
   
   #rightcolumn{
-    float: none;
-    width: 100%;
-    margin-left: 0;
-    clear: both;
+    display:none;
   }
   
   #contentcolumn{
@@ -252,7 +256,22 @@ b {
   }
 }
 
+@media(max-width: 675px){
+  .nav-tabs>li {
+    margin-right:5px;
+  }
+
+  .btn-group .btn {
+    padding:5px;
+  }
+
+  .dropdown-toggle {
+    height:32px;
+  }
+} 
+
 @media (max-width: 600px){ /* 2nd level responsive layout break point- drop left column down */
+
   #leftcolumn{
     float: none;
     width: 100%;
@@ -262,5 +281,11 @@ b {
   
   #contentcolumn{
     margin-left: 0;
-  }
+  }  
 }
+
+@media (max-width: 500px){
+  .nav-tabs>li {
+    margin-right:5;
+  }
+}  
